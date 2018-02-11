@@ -1,0 +1,22 @@
+footer {
+    border-top: 1px solid $border;
+    color: $text-dark;
+    padding: 40px 0 0;
+    width: 100%;
+
+    div {
+        display: inline-block;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .email-address {
+        float: left;
+    }
+
+    .copyright {
+        float: right;
+    }
+}

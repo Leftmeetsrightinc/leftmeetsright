@@ -1,0 +1,52 @@
+// TYPOGRAPHY
+$lora: 'Lora', serif;
+$nunito: 'Nunito', sans-serif;
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: $lora;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 {
+    
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+    font-family: $nunito;
+    line-height: 1.75;
+}
+
+i {
+    cursor: pointer;
+}
+
+button, .sub-menu, .pagination li, .social-share {
+    font-family: $lora;
+}
+
+.slide-header {
+    li {
+        font-family: $lora;
+    }
+}

@@ -1,0 +1,14 @@
+clients:
+  - name: Old man and books
+    imglarge: '../assets/images/projects/project1/large.jpeg'
+    imgmedium: '../assets/images/projects/project1/medium.jpeg'
+    imgsmall: '../assets/images/projects/project1/small.jpeg'
+    title: Old man and books
+    link: 'https://lavanyaks.pythonanywhere.com'
+
+  - name: Desktop arrangement
+    imglarge: '../assets/images/projects/project2/large.jpeg'
+    imgmedium: '../assets/images/projects/project2/medium.jpeg'
+    imgsmall: '../assets/images/projects/project2/small.jpeg'
+    title: Desktop arrangement
+    link: 'https://lavanyaks.pythonanywhere.com'
