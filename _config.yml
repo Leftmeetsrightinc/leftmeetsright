@@ -17,7 +17,7 @@ title: Left meets Right.
 email: leftmeetsright@info.com
 description: >- # this means to ignore newlines until "baseurl:"
   We specialize in helping businesses create and build on their presence on the web.
-baseurl: "/leftmeetsright/" # the subpath of your site, e.g. /blog
+baseurl: "/leftmeetsright" # the subpath of your site, e.g. /blog
 url: "https://leftmeetsright.ca" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lavanyaksingh
 github_username:  lavanyaks

@@ -18,9 +18,9 @@ layout: default
       <h2 class="client-name">{{client.name}}</h2>
       <a href="{{ client.link }}">View Work</a>
     </div>
-    <img srcset="{{ client.imgmedium }} 768w, 
-         {{ client.imglarge }} 1024w"
-         src="{{ client.imgsmall }}"
+    <img srcset="{{ site.baseurl }}{{ client.imgmedium }} 768w, 
+         {{ site.baseurl }}{{ client.imglarge }} 1024w"
+         src="{{ site.baseurl }}{{ client.imgsmall }}"
          alt="yah" data-expand="-20" class="lazyload">
   </div>
   {% endfor %}
