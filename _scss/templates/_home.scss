@@ -1,7 +1,6 @@
 .home {
     
     .home-description {
-        // background-image: url('/../assets/images/brain.jpg');
         min-height: 450px;
         background-color: black;
         color: white;
@@ -21,5 +20,22 @@
         span {
             color: $grey;
         }
+    }
+
+    .client {
+        max-height: 500px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .client-details {
+        position: absolute;
+        bottom: 0;
+        padding: 50px;
+        color: $link-light;
+    }
+
+    .client-name {
+        font-family: $headings;
     }
 }

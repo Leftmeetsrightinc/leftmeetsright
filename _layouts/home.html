@@ -13,23 +13,15 @@ layout: default
   </div>
   
   {% for client in site.data.home.clients %}
-  <span>{{client.name}}</span>
-  <img src="{{ client.imgsmall }}" srcset="{{ client.imgmedium }} 1000w, {{ client.imglarge }} 2000w" alt="yah"> 
+  <div class="client">
+    <div class="client-details">
+      <h2 class="client-name">{{client.name}}</h2>
+      <a href="{{ client.link }}">View Work</a>
+    </div>
+    <img srcset="{{ client.imgmedium }} 768w, 
+         {{ client.imglarge }} 1024w"
+         src="{{ client.imgsmall }}"
+         alt="yah" data-expand="-20" class="lazyload">
+  </div>
   {% endfor %}
-  
-  <!-- <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
-      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      
-      <h2>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </h2>
-    </li>
-    {% endfor %}
-  </ul>
-  
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
-  
 </div>

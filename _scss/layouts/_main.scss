@@ -13,7 +13,7 @@ body {
 }
 
 header, main, footer {
-    display: inline-block;
+    // display: inline-block;
 }
 
 header {
@@ -39,6 +39,7 @@ div {
 
 img {
     width: 100%;
+    animation: opacity 0.3s linear;
 }
 
 ul {
@@ -67,5 +68,17 @@ button {
 
 @media screen and (max-width: 768px) {
     main {
+    }
+}
+
+// ANIMATIONS
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

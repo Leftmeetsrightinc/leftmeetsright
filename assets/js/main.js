@@ -15,7 +15,10 @@ window.onload = function () {
         }
     });
 
-    closeMenu[0].addEventListener('click', function () {
-        navMenu[0].classList.remove('open');
-    });
+    if (navMenu[0].classList.contains('open')) {
+        document.addEventListener('click', function () {
+            console.log('click');
+            navMenu[0].classList.remove('open');
+        });
+    }
 };
