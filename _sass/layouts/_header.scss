@@ -2,11 +2,17 @@
     background-color: $main-background;
     color: $text-light;
     height: 100%;
-    position: absolute;
+    position: fixed;
     right: -400px;
     width: 400px;
     padding: 40px;
-    z-index: 1;
+    text-align: right;
+    z-index: 3;
+
+    .header-container {
+        height: 100%;
+        position: relative;
+    }
 
     ul {
         margin: 0;
@@ -19,14 +25,16 @@
         text-align: right;
         margin-bottom: 10px;
     }
+
+    .address {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+    }
 }
 
 .slide-header.open {
     animation: slide-menu 1s forwards;
-}
-
-.open {
-    animation: slide-body 1s forwards;
 }
 
 @keyframes slide-menu {
@@ -70,8 +78,8 @@ header {
     .menu-icon {
         float: right;
         position: relative;
-        height: 41px;
-        width: 25px;
+        height: 45px;
+        width: 30px;
     }
     
     .menu-text {
@@ -89,7 +97,7 @@ header {
         &:after {
             display: block;
             background-color: white;
-            width: 25px;
+            width: 30px;
             height: 2px;
             content: '';
             border-radius: 2px;
@@ -102,12 +110,12 @@ header {
         }
         
         &.menu-middle-bar:after {
-            top: 7px;
+            top: 9px;
             animation: appear 0.5s forwards;
         }
         
         &.menu-bottom-bar:after {
-            top: 14px;
+            top: 18px;
             animation: move-back-right 0.5s forwards;
         }
     }
@@ -186,6 +194,21 @@ header {
         }
         100% {
             left: 0;
+        }
+    }
+}
+
+@media (max-height: 600px) {
+    .slide-header {
+        overflow-y: scroll;
+
+        .header-container {
+            height: auto;
+        }
+
+        .address {
+            position: relative;
+            margin-top: 50px;
         }
     }
 }

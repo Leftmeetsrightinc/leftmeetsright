@@ -14,6 +14,13 @@ showMenu[0].addEventListener('click', function () {
     }
 });
 
+mainClass[0].addEventListener('click', function (event) {
+    if (navMenu[0].classList.contains('open')) {
+        navMenu[0].classList.remove('open');
+        mainClass[0].classList.remove('open');
+    }
+});
+
  if ("serviceWorker" in navigator) {
    navigator.serviceWorker.register("./service-worker.js").then(function() {
      console.log("Service Worker Registered");
