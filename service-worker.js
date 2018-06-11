@@ -2,7 +2,8 @@ var cacheName = "LMR-4";
 // var dataCacheName = "weatherData-v1";
 var filesToCache = [
     '/',
-    '/css/styles.css'
+    '/css/styles.css',
+    '/assets/js/main.js'
 ];
 
 self.addEventListener("install", function(e) {
